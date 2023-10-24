@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+  <div class="desktop-container">
+    <header id="page-logo-m"><img src="./assets/images/logo.svg" alt="Base Apparel Icon"></header>
+    <img id="hero-img" alt="Person posing with Base Apparel Clothes">
+    <main>
+      <header id="page-logo-d"><img src="./assets/images/logo.svg" alt="Base Apparel Icon"></header>
+      <div class="content-container">
+        <h1 id="page-title"><span>WE'RE</span> COMING SOON</h1>
+        <p id="page-desc">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <div class="email-container">
+          <input type="email" id="input-email" placeholder="Email Address" onkeydown="clearErrors()">
+          <img id="img-error" src="./assets/images/icon-error.svg" alt="Invalid email error">
+          <button id="input-btn" type="submit" onclick="submitEmail()"><img src="./assets/images/icon-arrow.svg" alt="Submit button"></button>
+          <p id="error-text">Please provide a valid email</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/Johnsonsamuel20">Samuel Johnson</a>.
+    </p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
