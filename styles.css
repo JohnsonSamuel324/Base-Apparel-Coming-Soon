@@ -44,7 +44,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
     gap: 1rem;
     margin: 0 auto;
@@ -152,6 +151,9 @@ main {
 }
 
 @media (min-width: 1024px) {
+    body {
+        background-color: hsl(0, 36%, 70%);
+    }
     #page-logo-m {
         display: none;
     }
@@ -196,7 +198,17 @@ main {
 }
 @media (min-width: 1440px) {
     main {
-        width: 55%;
+        width: 65%;
+    }
+    #page-title {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    #page-desc {
+        width: 80%;
+    }
+    .email-container {
+        width: 80%;
     }
     #input-btn {
         width: 18%;
